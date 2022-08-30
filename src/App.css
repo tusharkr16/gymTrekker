@@ -1,38 +1,46 @@
-.App {
-  text-align: center;
+body {
+  font-family: 'Josefin Sans';
+  background-color: #FFFAFB;
+  
+}
+ 
+.search-btn:hover {
+  color: #FF2625 !important;
+  border: 1px solid #FF2625 !important;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.bodyPart-card {
+  transform: scale(1, 1);
+  transition: 0.3s all ease-in-out;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.exercise-card:hover,
+.bodyPart-card:hover {
+  transform: scale(1.1, 1.1);
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.exercise-card {
+  width: 400px;
+  height: 445px;
+  background: #fff;
+  border-top: 4px solid #FF2625;
+  border-bottom-left-radius: 20px;
+  text-decoration: none;
   display: flex;
+  justify-content: space-between;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  padding-bottom: 10px;
+  transform: scale(1, 1);
+  transition: 0.3s all ease-in-out;
 }
 
-.App-link {
-  color: #61dafb;
+.exercise-card img {
+  height: 326px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
+@media screen and (max-width:1200px) {
+  .homeImages{
+    display: none;
   }
 }
+
